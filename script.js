@@ -15,6 +15,7 @@ const createLiElements = () => {
     for (let i = 0; i < 10; i++) {
         const li = document.createElement("li")
         li.innerHTML = `element nr ${orderElement++}`
+        li.style.fontSize = `${size++}px`
         document.querySelector("ul").appendChild(li)
     }
 
